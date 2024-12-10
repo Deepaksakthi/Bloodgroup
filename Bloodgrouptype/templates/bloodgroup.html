@@ -15,7 +15,7 @@
         
         body {
             width: 100%;
-            background: linear-gradient(45deg, rgb(46, 179, 212), rgb(43, 176, 151), rgb(82, 57, 11));
+            background: linear-gradient(45deg, rgb(46, 179, 212), rgb(113, 201, 239), rgb(26, 108, 152));
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -23,7 +23,6 @@
             justify-items: center;
             padding: 20px;
             font-family: Arial, Helvetica, sans-serif;
-            color: white;
         }
         
         #image {
@@ -44,6 +43,7 @@
             display: block;
             font-size: 2rem;
             line-height: 1.7em;
+            color: white;
         }
         
         h3 {
@@ -51,15 +51,25 @@
             margin-bottom: 0.8rem;
         }
         
+        #blood-idetification {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        #upload-image {
+            background-color: rgb(212, 223, 233);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        
         #choose-file {
             display: grid;
             gap: 1.2rem;
             align-items: center;
             justify-items: center;
-        }
-        
-        #blood-cell {
-            margin-top: 30px;
         }
         
         form {
@@ -113,14 +123,14 @@
             font-size: 0.9rem;
             border: none;
             border-radius: 10px;
-            background-color: #168067;
+            background-color: #5ec5e1;
             color: white;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         
         button:hover {
-            background-color: #139a7b;
+            background-color: #0e5682;
         }
         
         #uploaded-image hr {
@@ -129,6 +139,10 @@
             width: 80%;
             border: 1px solid white;
             text-align: center;
+        }
+        
+        #blood-type {
+            color: white;
         }
         
         #blood-type hr {
@@ -140,18 +154,26 @@
         }
         
         #uploaded-image {
-            width: 100%;
-            padding: 20px;
             display: grid;
             align-items: center;
             justify-items: center;
+            color: black;
         }
         
         #process-image {
-            width: 100%;
+            padding: 2rem;
+            background-color: rgb(212, 223, 233);
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #converted-image {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
+            text-align: center;
+            align-items: center;
             justify-content: center;
         }
         
@@ -163,6 +185,12 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media screen and (max-width: 760px) {
+            #blood-idetification {
+                display: grid;
+            }
         }
         
         @media screen and (max-width: 480px) {
@@ -213,43 +241,48 @@
 <body>
     <div id="image">
         <h1>Welcome to Blood Group Identification Web App!</h1>
-        <form method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div id="choose-file">
-                <div id="blood-cell">
-                    <label for="cell">
-                        Upload Blood Images
-                        <div id="file-type">   
-                            <div id="img-view">
-                                <div id="file-img">
-                                    <img src="{% static "images/dragdrop.png" %}" alt="dragdrop">
+        <div id="blood-idetification">
+            <div id="upload-image">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div id="choose-file">
+                        <div id="blood-cell">
+                            <label for="cell">
+                                Upload Blood Cell Image
+                                <div id="file-type">   
+                                    <div id="img-view">
+                                        <div id="file-img">
+                                            <img src="{% static "images/dragdrop.png" %}" alt="dragdrop">
+                                        </div>
+                                        <input type="file" name="abd" id="cell" accept="image/*" hidden>
+                                        <p>Drag and Drop <br> or <br>Click here to upload images</p>
+                                    </div>
                                 </div>
-                                <input type="file" name="abd" id="cell" accept="image/*" hidden>
-                                <p>Drag and Drop <br> or <br>Click here to upload images</p>
-                            </div>
+                            </label><br>
                         </div>
-                    </label><br>
-                </div>
-                <div id="sub">
-                    <button type="submit">Check Blood Group</button>
-                </div>
+                        <div id="sub">
+                            <button type="submit">Check Blood Group</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-        <div id="uploaded-image">
-            {% if img %}
-            <hr>
-            <h3>{{ img_name }}</h3>
-            <div id="process-image">
-                <div>
-                    <h3>Uploaded Image:</h3>
-                    <img src="{{ img }}" alt="Blood Group Image">
+            <div id="uploaded-image">
+                {% if img %}
+                <div id="process-image">
+                    <h3>{{ img_name }}</h3>
+                    <div id="converted-image">
+                        <div>
+                            <h3>Uploaded Image:</h3>
+                            <img src="{{ img }}" alt="Blood Group Image">
+                        </div>
+                        <div>
+                            <h3>Morphed Image:</h3>
+                            <img src="{{ morp_img_url }}" alt="Blood Group Image">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>Morphed Image:</h3>
-                    <img src="{{ morp_img_url }}" alt="Blood Group Image">
-                </div>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
         <div id="blood-type">
             {% if blood_type %}
