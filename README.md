@@ -20,26 +20,28 @@ PROJECT VISUALS
 
 HOME PAGE:
 
-https://github-production-user-asset-6210df.s3.amazonaws.com/154987040/394368537-15a1705e-f6aa-4732-84ae-b05d58a9a533.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241210T171734Z&X-Amz-Expires=300&X-Amz-Signature=fbc9f682334e284be0b646bd42edf84fefa471770d177be8984fe95ef9ba9037&X-Amz-SignedHeaders=host
+![home page](https://github.com/user-attachments/assets/de158653-100a-4da2-b1c4-458ec7a310ce)
+
 
 SIGNUP PAGE:
 
-https://github.com/user-attachments/assets/0f6252cc-8dd5-4afb-972c-ac84ee82873b
+![signup page](https://github.com/user-attachments/assets/eaaa27dd-2cca-4b39-994e-0839bbab8b4d)
 
 LOGIN PAGE:
 
-https://github.com/user-attachments/assets/4de604d5-f216-46ba-bed8-75e05ab21af0
+![login page](https://github.com/user-attachments/assets/7de5caf2-9d9e-4ab4-9915-d406e634ff1c)
+
 
 PROFILE PAGE:
 
-https://github.com/user-attachments/assets/cba22ef7-0307-4c2b-86bf-bee34092b29d
+![pofile page](https://github.com/user-attachments/assets/5e86e45b-5747-4ddf-8e24-82c077e2355e)
 
 OUTPUTS:
 
-https://github.com/user-attachments/assets/ba3e3189-c591-4b88-bdbf-368bf1dbd883
+![output 1](https://github.com/user-attachments/assets/91045623-f9d3-407c-9ff7-4cdcaf50ebc1)
 
 
-https://github.com/user-attachments/assets/59f637d0-31bd-4f7d-bfb0-ee60ee213e23
+![output 2](https://github.com/user-attachments/assets/c0720e70-cae3-44c1-b794-c4efb87c2b7f)
 
 CONCLUSION
 
