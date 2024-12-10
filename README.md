@@ -20,7 +20,7 @@ PROJECT VISUALS
 
 HOME PAGE:
 
-https://github.com/user-attachments/assets/15a1705e-f6aa-4732-84ae-b05d58a9a533
+https://github-production-user-asset-6210df.s3.amazonaws.com/154987040/394368537-15a1705e-f6aa-4732-84ae-b05d58a9a533.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241210T171734Z&X-Amz-Expires=300&X-Amz-Signature=fbc9f682334e284be0b646bd42edf84fefa471770d177be8984fe95ef9ba9037&X-Amz-SignedHeaders=host
 
 SIGNUP PAGE:
 
