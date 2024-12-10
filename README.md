@@ -6,10 +6,10 @@ The project aims to automate the identification of blood groups by combining Dja
 
 CUSTOMER FEATURES
 
-Create a new user account to access the application
-Login with your username and password
-Input for Uploading an Image
-Output to display the Identified Blood Group
+Create a new user account to access the application.
+Login with your username and password.
+Input for Uploading an Image.
+Output to display the Identified Blood Group.
 
 MILESTONES
 
@@ -31,7 +31,7 @@ SIGNUP PAGE:
 
 LOGIN PAGE:
 
-![login page](https://github.com/user-attachments/assets/7de5caf2-9d9e-4ab4-9915-d406e634ff1c)
+![login 1](https://github.com/user-attachments/assets/3cf8ae5a-fff0-4d32-af91-e55dd7f1baf8)
 
 
 PROFILE PAGE:
